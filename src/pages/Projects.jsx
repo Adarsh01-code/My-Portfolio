@@ -12,7 +12,7 @@ const Projects = () => {
     </h1>
 
     <div className="mt-5 flex flex-col gap-3 text-slate-500">
-    <p>Technical knowlwegde in react with good soo projects here, ye bd me likhenge chtgpt use kr k</p>
+    <p>The projects are made using stack - Javascript/Typescript with React Js/Next Js for frontend and Django in the backend, with the implemention of Convex/Firebase for real-time database functionality and Clerk/Firebase for user-authentication.</p>
     </div>
 
     <div className='flex flex-wrap my-20 gap-16'>
@@ -35,15 +35,29 @@ const Projects = () => {
       <h4 className='text-xl font-semi-poppins font-semibold'>{project.name}</h4>
       <p className='mt-2 text-slate-500'> {project.description} </p>
 
-      <div className='mt-5 flex items-center gap-2 font-poppins'>
+      <div className='mt-5 flex items-center gap-8 font-poppins'>
       <Link
       to={project.link}
       target="_blank"
       rel="noopener noreferrer"
       className="font-semibold text-blue-500"
       >
-      Link to project
+      Github
       </Link>
+
+      <div>
+
+      <Link
+      to={project.weblink}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="font-semibold text-blue-500"
+      >
+      Visit Website here
+      </Link>
+
+      </div>
+
       </div>
       </div>
 
