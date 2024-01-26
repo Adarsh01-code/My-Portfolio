@@ -1,12 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import {arrow} from '../assets/icons'
+import cursor from '../assets/icons/hand-cursor.png'
 
 
 const InfoBox = ({text, link, btnText}) => (
-    <div className='info-box'>
+    <div className='info-box' style={{width:"400px"}}>
     <p className='font-medium sm:text-xl text-center' >{text}</p>
-    <Link to={link} className='neo-brutalism-white neo-btn'>
+    <Link to={link} className='neo-brutalism-white neo-btn' style={{width:"180px", height:"50px"}}  >
     {btnText}
     <img src={arrow} className='w-4 h-4 object-contain' />
     </Link>
@@ -16,23 +17,23 @@ const InfoBox = ({text, link, btnText}) => (
 const renderContent = {
     1 : (
         <h1 className='sm:text-xl sm:leading-snug text center neo-brutalism-blue py-4 px-8 text-white mx-5'>
-        Hi, I am <span className='font-semibold'>AdArsh</span>👋
+        Hi, I am <span className='font-semibold'>Adarsh</span>👋
         <br/>
-        React developer 
+        Drag to Explore ! 
         </h1>
     ),
     2 : (
         <InfoBox 
-        text="Expertise in React nd react native"
+        text="Want to know about me?"
         link="/about"
-        btnText="Learn more"
+        btnText="Click here"
         />
     ),
     3 : (
         <InfoBox 
-        text="Projects"
+        text="Explore my work?"
         link="/projects"
-        btnText="My portfolio"
+        btnText="My projects"
         />
     ),
     4 : (

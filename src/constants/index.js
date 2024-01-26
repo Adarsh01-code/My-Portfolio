@@ -112,56 +112,48 @@ export const skills = [
 export const experiences = [
     {
         title: "React Developer",
-        company_name: "DANK",
-        icon: starbucks,
+        company_name: "DANK (Startup company from Poland)",
+        
         iconBg: "#accbe1",
-        date: "March 2020 - April 2021",
+        date: "July 2023 - Present",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
+            "Developed user-friendly cross-platform interface on web using ReactJS and on App using React Native; optimized performance by reducing load time by 40% and achieving a 25% increase in user engagement.",
+            "Implemented efficient application data management and event tracking using recognized analytics platforms such as Redux, MobX, and Mixpanel; reduced customer support issues by 40% and improved user experience by analyzing user behavior data. ",
             "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
             "Participating in code reviews and providing constructive feedback to other developers.",
         ],
     },
+
     {
-        title: "Cloud Engineer-1 intern",
+        title: "Software Developer Intern",
+        company_name: "Drishtic AI (US-based company)",
+        icon: shopify,
+        iconBg: "#b7e4c7",
+        date: "February 2023 - May 2023",
+        points: [
+            "Developed UI structure and models for a chatbot utilizing React for the frontend and Python as backend",
+            "Created a fully functional API for the company's website using Python, managing all e-commerce operations.",
+            "Building a customizable and integrable chatbot UI.",
+            
+        ],
+    },
+
+
+    {
+        title: "Cloud Engineer Intern",
         company_name: "Hanu Software Solutions",
         icon: tesla,
         iconBg: "#fbc3bc",
-        date: "Jan 2021 - Feb 2022",
+        date: "December 2022 - February 2023",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Engineered and managed robust cloud architectures using Azure Kubernetes Service (AKS) and Azure Functions for seamless scalability, leading to a 30% improvement in deployment efficiency. ",
+            "Implemented Infrastructure as Code (IaC) using Azure Resource Manager (ARM) templates and Terraform, automating the provisioning of resources and reducing manual workload by 40%.",
+            "Optimized cloud performance and cost-efficiency through Azure Cost Management and Azure Monitor, leading to a 20% reduction in operational costs.",
+            "Implemented Azure SQL Database and Azure Blob Storage solutions, achieving a 15% improvement in data retrieval and storage efficiency, while ensuring 99.9% availability.",
         ],
     },
-    {
-        title: "Software Developer Engineer-1",
-        company_name: "Drishtic AI",
-        icon: shopify,
-        iconBg: "#b7e4c7",
-        date: "Jan 2023 - June 2023",
-        points: [
-            "Developed UI structure and models for the Chatbot with React int he front and python in the backend.",
-            "Leveraged Flask as a connector between frontend and backend for seemless communication & interaction",
-            "Utilized Langchain and pandas to enhance data manipulation.",
-            "",
-        ],
-    },
-    {
-        title: "React Developer",
-        company_name: "DANK",
-        icon: meta,
-        iconBg: "#a2d2ff",
-        date: "July 2023 - Present",
-        points: [
-            "Developed user-friendly cross-platform interface on web using React and React native; optimizing performance upto 40%.",
-            "Implementation of data management and event tracking using analytical platforms like MobX and Mixpanel.",
-            "Reduced customer support issues by 40% and improved user experiences using fluid UI by 50%",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
+   
+   
 ];
 
 export const socialLinks = [

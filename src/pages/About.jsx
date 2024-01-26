@@ -13,7 +13,7 @@ const About = () => {
     </h1>
 
     <div className="mt-5 flex flex-col gap-3 text-slate-500">
-    <p>Software Engineer from India , good with technical knowlwegde in react</p>
+    <p>I am a passionate React developer specializing in creating dynamic and user-friendly web applications. With a versatile skill set in JavaScript, TypeScript, Python, Django, Three.js, React.js, and Next.js, I deliver innovative solutions that effectively address modern web development challenges.</p>
     </div>
     
     <div className="py-10 flex flex-col">
@@ -39,7 +39,7 @@ const About = () => {
     <h3 className="subhead-text">Work Experience</h3>
     <div className="mt-5 flex flex-col gap-3 text-slate-500">
     <p>
-    software engineer hai bhaiya , job de do yr, tbse try kr rhe, ni toh gharr jaana padega.
+     
     </p>
     </div>
 
@@ -51,15 +51,11 @@ const About = () => {
       date={experience.date}
       icon={
         <div className='flex justify-center items-center w-full h-full'>
-        <img
-        src={experience.icon}
-        alt={experience.company_name}
-        className='w-[60%] h-[60%] object-contain'
-        />
+       
         </div>
       }
       iconStyle={{
-        // background:experience.iconBg,
+        background:experience.iconBg,
         borderBottom:'8px',
         borderStyle:'solid',
         borderBottomColor:experience.iconBg,

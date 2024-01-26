@@ -6,12 +6,43 @@ import Sky from '../models/Sky'
 import Bird from '../models/Bird'
 import Plane from '../models/Plane'
 import HomeInfo from '../components/HomeInfo'
+import cursor from '../assets/icons/hand-cursor.png'
 
 
 
 const Home = () => {
     const [isRotating , setIsRotating] = useState(false);
     const [currentStage , setCurrentStage] = useState(1);
+
+    const [showHandCursor, setShowHandCursor] = useState(true);
+
+    const handleMouseDown = () => {
+      setShowHandCursor(false); 
+    };
+  
+    // Inline CSS for the hand cursor
+    const handCursorStyle = {
+      position: 'absolute',
+      top: '50%', 
+      left: 0,
+      width: '50px', 
+      height: '50px',
+      backgroundImage: cursor, 
+      backgroundRepeat: 'no-repeat',
+      backgroundPosition: 'center',
+      backgroundSize: 'contain',
+      animation: 'moveCursor 5s linear infinite',
+      display: showHandCursor ? 'block' : 'none' 
+    };
+  
+   
+    const keyframesStyle = `
+      @keyframes moveCursor {
+        0% { left: 0; }
+        50% { left: calc(100% - 50px); } /* 50px is the width of the cursor */
+        100% { left: 0; }
+      }
+    `;
    
 
     const adjustIslandForScreenSize=()=> {
@@ -53,17 +84,23 @@ const Home = () => {
 
 
   return (
-    <section className='w-full h-screen relative'>
+    <section className='w-full h-screen relative' onMouseDown={handleMouseDown}>
 
     <div className='absolute top-28 left-0 right-0 z-10 flex items-center justify-center'>
     {currentStage && <HomeInfo currentStage={currentStage} />}
     </div>
+
+    
+
+      
 
 
     <Canvas
     className={`w-full h-screen bg-transparent ${isRotating? 'cursor-grabbing':'cursor-grab'}`}
     camera={{near:0.1, far:1000}}
     >
+    
+      
     
     <Suspense fallback={<Loader />}>
 
