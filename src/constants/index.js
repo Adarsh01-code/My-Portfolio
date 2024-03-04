@@ -176,6 +176,15 @@ export const socialLinks = [
 
 export const projects = [
     {
+        iconUrl: threads,
+        theme: 'btn-back-green',
+        name: 'askAi.io',
+        description: 'a revolutionary web application enabling AI-driven interaction with PDF documents using NextJs in frontend , Primsa in backend , Pinecone for vector embeddings, OPENAI for AI query and Stripe for payment gateway.',
+        link: 'https://github.com/Adarsh01-code/askAI',
+        weblink : "https://ask-ai-omega.vercel.app"
+        
+    },
+    {
         iconUrl: pricewise,
         theme: 'btn-back-red',
         name: 'WorkSphere.com',

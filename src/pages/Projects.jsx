@@ -12,7 +12,7 @@ const Projects = () => {
     </h1>
 
     <div className="mt-5 flex flex-col gap-3 text-slate-500">
-    <p>The projects are made using stack - Javascript/Typescript with React Js/Next Js for frontend and Django in the backend, with the implemention of Convex/Firebase for real-time database functionality and Clerk/Firebase for user-authentication.</p>
+    <p>The projects are made using stack - Javascript/Typescript with React Js/Next Js for frontend and Django in the backend, with the implemention of Convex/Firebase/Primsa/Neon/Uploadthing for real-time database functionality and Clerk/Kinde for user-authentication.</p>
     </div>
 
     <div className='flex flex-wrap my-20 gap-16'>
